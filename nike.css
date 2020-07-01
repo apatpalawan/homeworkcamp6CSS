@@ -252,8 +252,13 @@ footer p {
     width: 550px;
     height: 600px;
     padding: 25px;
-    
 }
+A:link {
+    text-decoration:none;
+    }
+    A:visited {
+    text-decoration:none;
+    }
 
 
 

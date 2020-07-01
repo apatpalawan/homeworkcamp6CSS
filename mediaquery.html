@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        .image1 {
+            text-align: center;
+        }
+        .image1 img {
+            width: 80%;
+        }
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 20px;
+        }
+        .box {
+            height: auto;
+            padding: 30px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        .box h2 {
+            font-size: 18px;
+            background-color: white;
+        }
+        .box p {
+            font-size: 14px;
+            background-color: white;
+            padding-top: 10px;
+        }
+        .button {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            background-color: black;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .image1 {
+                text-align: center;
+            }
+             .image1 img {
+                width: 80%;
+            }
+            .container {
+                grid-template-columns: auto;
+            }
+
+            div > div {
+                min-width: 500px;
+            }         
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 960px) {
+            .image1 {
+                text-align: center;
+            }
+             .image1 img {
+                width: 80%;
+            }
+            .container {
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 5%;
+            }
+            div > div {
+                min-width: 200px;
+            }         
+        }
+
+        @media only screen and (min-width: 961px) {
+            .container {
+                grid-template-columns: repeat(3, auto);
+                grid-gap: 5%;
+            }
+            .image1 img {
+                text-align: center;
+            }
+             div > div {
+                min-width: auto;
+                height: auto;
+            }       
+        }
+    </style>
+</head>
+<body>
+        <center><h1> อินดิเคเตอร์ Forrex</h1></center>
+        <br>  <br>
+    <div class="image1">
+        <img src="pig/pig.webp">
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>Simple Moving Average (ค่าเฉลี่ยเคลื่อนที่อย่างง่าย)</h2>
+            <p> Simple Moving Average (SMA) คือราคาเฉลี่ยในช่วงกรอบระยะเวลาหนึ่ง ในที่นี้ค่าเฉลี่ยของราคานั้นได้มาจากการคำนวณทางคณิตศาสตร์ ยกตัวอย่างเช่น เส้นค่าเฉลี่ยเคลื่อนที่แบบ 20-วัน จะเป็นค่าเฉลี่ยของราคาปิดในช่วงระยะเวลา 20 วันนั่นเอง </p>
+           
+        </div>
+        <div class="box">
+            <h2>Exponential Moving Average </h2>
+             Exponential Moving Average (EMA) จะส่งสัญญาณแจ้งเทรนด์ได้เร็วกว่าเมื่อเกิดการเปลี่ยนแปลงของราคา ค่า Exponential Moving Average (EMA) ในกรอบระยะเวลาสั้นที่ใช้กันทั่วไปจะเป็น 50-วัน หรือ 200-วัน ส่วนค่า EMA ในกรอบระยะเวลานานที่ใช้กันโดยทั่วไปจะเป็น 12-วัน และ 26-วัน</p>
+           
+        </div>
+        <div class="box">
+            <h2>Bollinger band</h2>
+            <p> จะใช้พารามิเตอร์ 2 ตัวด้วยกัน ได้แก่ จำนวนวันสำหรับเส้นค่าเฉลี่ยเคลื่อนที่จำนวนค่าเปลี่ยนแปลงพื้นฐานที่คุณต้องการวางเส้นให้ห่างจากเส้นค่าเฉลี่ยเคลื่อนที่ </p>
+            
+        </div>
+        <div class="box">
+            <h2>Fibonacci Retracement</h2>
+            <p>อินดิเคเตอร์ Fibonacci Retracement เป็นอินดิเคเตอร์ที่ทำงานโดยยึดหลักที่ว่าหลังจากที่มีการเคลื่อนไหวของราคาอย่างรุนแรง มีโอกาสสูงที่ตลาดจะพลิกกลับในสัดส่วนหลักอันใดอันหนึ่ง สัดส่วนว่านี้ก็คือชุดตัวเลข Fibonacci (ฟีโบนักชี) นั่นเอง ชุดตัวเลข Fibonacci เป็นชุดตัวเลขที่ใช้กันมาตั้งแต่สมัยโบราณ แต่เริ่มมาได้รับความนิยมก็ตอนที่นักคณิตศาสตร์ชาวอิตาเลียนที่ชื่อ Fibonacci ชุดตัวเลขนี้จะเริ่มด้วย 0 และ 1 และตัวเลขต่อไปจะเป็นผลรวมของตัวเลขสองตัวก่อนหน้าในชุดตัวเลข</p>
+           
+        </div>
+        <div class="box">
+            <h2>ADX คืออะไร</h2>
+            <p> บทความนี้ จะเป็นหมวดเทคนิคการใช้งาน Indicator ซึ่งคราวนี้จะเป็น Indicator ยอดนิยมที่ชื่อว่า ADX Indicator แต่ก็อาจเป็น Indicator MT4 ที่อีกหลายคนเลือกที่จะ "ไม่ใช้" เช่นกัน เนื่องจากเป็น Indicator ที่ไม่ได้ให้สัญญาณการเทรดอย่างตรงตัว ต้องใช้การตีความร่วมกับเทคนิคอื่นๆ อย่างไรก็ตาม ในบทเรียนนี้เราจะเริ่มอธิบายกันตั้งแต่ ADX คืออะไร, ADX Indicator มีวิธีการคำนวณอย่างไร, ADX Forex จะตีความสภาวะตลาดได้อย่างไรบ้าง, เส้น ADX คืออะไรบ้าง รวมถึงเทคนิคขั้นสูงสำหรับแพลตฟอร์ม ADX Indicator MT4 พร้อมแล้วไปลุยกัน! </p>
+          
+        </div>
+        <div class="box">
+            <h2>Stochastic</h2>
+            <p>  Stochastic Oscillator เป็น Indicator ที่ช่วยให้การเทรดมีความคล่องตัวได้มากยิ่งขึ้น ได้รับการพัฒนาโดย George C. Lane ในปลายปี 1950 มันเป็นหนึ่งใน Indicator ที่ได้รับนิยมมากที่สุดตัวหนึ่งสำหรับการเทรด Forex (อ่านเพิ่มเติมได้ที่บทความ : Forex คือ), หุ้น รวมถึงสินค้าเสี่ยงสูงอื่นๆ อย่างทองคำ, น้ำมัน คำว่า Stochastic เป็นคำภาษากรีกที่หมายถึง "สุ่ม" เป็นสิ่งที่เหมาะสมอย่างมากสำหรับตลาดการเงินที่ 'ตัวแปรและผลลัพธ์นั่นมีความไม่แน่นอน</p>
+            
+        </div>
+    </div>
+</body>
+</html>

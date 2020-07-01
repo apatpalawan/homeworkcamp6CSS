@@ -4,5 +4,5 @@
  Slide52 คือ ข้อ 9 <br>
 slide 7 คือ การบ้านข้อ2 <br>
 Slide10 คือ การบ้านข้อ3 <br>
-การบ้าน ข้อ5  คือ ให้ทำเว็บ NIKE <br>
+WebNIKE 8ือ  ข้อ5   <br>
 Media quenry คือ การบ้านข้อ 6   <br>

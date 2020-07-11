@@ -10,3 +10,4 @@ Media quenry                คือ ข้อ6   <br>
 alide15                     คือ ข้อ4   <br>
 Pimclickresponsive          คือ ข้อ7   <br>
 slide48animation            คือ ข้อ8   <br>
+slid57animation             คือ ข้อ10   <br>

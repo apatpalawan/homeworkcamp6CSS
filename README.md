@@ -11,3 +11,4 @@ alide15                     คือ ข้อ4   <br>
 Pimclickresponsive          คือ ข้อ7   <br>
 slide48animation            คือ ข้อ8   <br>
 slid57animation             คือ ข้อ10   <br>
+PimclicฺBootstep             คือ ข้อ11   <br>

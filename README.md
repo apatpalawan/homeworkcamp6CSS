@@ -21,4 +21,8 @@ alide15                     คือ ข้อ4   <br>
 Pimclickresponsive          คือ ข้อ7   <br>
 slide48animation            คือ ข้อ8   <br>
 slid57animation             คือ ข้อ10   <br>
+<<<<<<< HEAD
 >>>>>>> ae7f5f1f90093384daf7ed5af7a69393ce47e40b
+=======
+PimclicฺBootstep             คือ ข้อ11   <br>
+>>>>>>> dc173d62a97cdc66b134f08f17d4403ff22cef1d

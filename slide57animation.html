@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide 57 animation CSS</title>
+    <style>
+     .container {
+         margin-top: 40px;
+     }   
+     .color {
+         width: 150px;
+         height: 150px;
+         border: 1px solid #333;
+         border-radius: 20px;
+         background-color: yellow;
+
+         animation: animatcolor 5s infinite;
+     }
+     @keyframes animatcolor {
+        0%   {background-color: rebeccapurple;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        75% {background-color: rgb(128, 0, 75);}
+        100% {background-color: pink;}
+     }
+     .showhide {
+        
+         border: 1px solid #333;
+         background-color: lightgrey;
+         font-size: 20px;
+         font-weight: 700;
+         text-align: center;
+         opacity: 1;
+
+         animation: animathide 4s infinite;
+     }
+     @keyframes animathide {
+         0% {opacity: 0;}
+         25% {opacity: 0.5;}
+         50% {opacity: 1;}
+         75% {opacity: 0.5;}
+         100% {opacity: 0;}
+     }
+     .relative {
+         width: 50px;
+         height: 50px;
+         border: 1px solid #333;
+         margin-top: 30px;
+         background-color: black;
+         position: relative;
+
+         animation: animatrelative 5s;
+         animation-iteration-count: 3;
+     }
+     @keyframes animatrelative {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+     }
+    </style>
+</head>
+<body>
+    <p>
+        10.นำ animation ทั้งมารวมกันด้วย shorthand <br>
+            ใช้ keyframes เป็น % อย่างน้อย 5 ช่วง <br>
+            ให้มีอย่างน้อย 1 animation-iteration-count เป็น infinite <br>
+        10.1 ให้ทำ animation เปลี่ยนสี <br>
+        10.2 ให้ทำ animation show, hide <br>
+        10.3 ให้ทำ animation เคลื่อนที่
+    </p>
+
+    <div class="container">
+        <div class="color"></div>
+        <div class="showhide">  SHOW HIDE</div>
+        <div class="relative"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <style>
+            div {
+                position: relative;
+            }
+            .fromTo {
+                animation: anime1 10s linear 0s infinite alternate forwards;
+                height: 100px;
+            }
+            .hide1 {
+                animation: move1 3s ease 0s infinite alternate forwards;
+            }
+            .percent {
+                animation: anime2 10s linear 0s infinite alternate forwards;
+                height: 100px;
+            }
+            .hide2 {
+                animation: move2 3s ease 0s infinite alternate forwards;
+            }
+            @keyframes anime1 {
+                from {
+                    color: black;
+                    width: 200px;
+                    border: 1px solid salmon;
+                    background-color: skyblue;
+                    left: 0px;
+                }
+                to {
+                    color: blue;
+                    width: 100px;
+                    border: 3px dotted dodgerblue;
+                    background-color: gold;
+                    left: 300px;
+                }
+            }
+            @keyframes move1 {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+            @keyframes anime2 {
+                0% {
+                    color: black;
+                    width: 200px;
+                    border: 1px solid salmon;
+                    background-color: green;
+                    left: 0px;
+                }
+                50% {
+                    color: blue;
+                    width: 300px;
+                    border: 2px dashed yellow;
+                    background-color: green;
+                    left: -50px;
+                }
+                100% {
+                    color: red;
+                    width: 100px;
+                    border: 3px dotted dodgerblue;
+                    background-color: gainsboro;
+                    left: 300px;
+                }
+            } 
+            @keyframes move2 {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0.2;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+        </style>
+    </ฝhead>
+    <body>
+        <div>
+            <h1>กำหนด @keyframes แบบ from to</h1>
+            <div class="fromTo">
+                
+            </div>
+            <p class="hide1">show and hide 1</p>
+        </div>
+        <div>
+            <h1>กำหนด @keyframes แบบ %</h1>
+            <div class="percent">
+               
+            </div>
+            <p class="hide2">show and hide 2</p>
+        </div>
+            
+    </body>
+</html>
